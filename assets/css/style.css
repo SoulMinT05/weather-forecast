@@ -737,7 +737,9 @@ article.container::before {
         top: 20px;
         right: 20px;
     }
-
+    .font28 {
+        font-size: 20px;
+    }
     /* Header */
     .header-actions {
         gap: 24px;
@@ -842,7 +844,9 @@ article.container::before {
         padding-block: 0;
         height: 100%;
     }
-
+    .font28 {
+        font-size: 28px;
+    }
     .search-view,
     .search-view.active {
         all: unset;
@@ -931,5 +935,12 @@ article.container::before {
 @media (min-width: 1400px) {
     .highlight-list {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* for smaller than 768px */
+@media (max-width: 767px) {
+    .font28 {
+        font-size: 21px;
     }
 }
